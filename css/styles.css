@@ -1,0 +1,24 @@
+* {
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+h1 {
+    color: #ffcc03;
+}
+
+body {
+    background-color: #3F67AD;
+}
+
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 1.7em;
+    }
+
+    body {
+        font-size: 1em;
+    }
+}
