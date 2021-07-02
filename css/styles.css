@@ -22,3 +22,17 @@ body {
         font-size: 1em;
     }
 }
+.button-class{
+    background-color: #79a2eb;
+    color:#0c2042;
+    padding: 16px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #ffcc03;
+    cursor: pointer;
+}
+.pokemon-list{
+    list-style-type: none;
+}
