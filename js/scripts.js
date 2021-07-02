@@ -24,9 +24,25 @@ let pokemonRepository = (function () {
     return pokemonList;
   }
 
+  function showDetails(pokemon){
+    console.log(pokemon.name);
+  }
+
+  function addListItem(pokemon) {
+    let pokemonList = document.querySelector(".pokemon-list");
+    let listItem = document.createElement("li");
+    let button = document.createElement("button");
+    button.innerText = pokemon.name;
+    button.addEventListener("click", showDetails(pokemon));
+    button.classList.add("button-class");
+    listItem.appendChild(button);
+    pokemonList.appendChild(listItem);
+  }
+
   return {
     add: add,
-    getAll: getAll
+    getAll: getAll,
+    addListItem: addListItem,
   };
   
 })();
@@ -37,17 +53,10 @@ pokemonRepository.add({
   types: ['electric']
 })
 
-pokemonRepository.getAll().forEach((pokemon) => {
-  document.write(pokemon.name + "(height: " + pokemon.height + ")");
-  if (pokemon.height>1){
-    document.write(" -Wow that's big!")
-  }
-  document.write("<br>");
+pokemonRepository.getAll().forEach(function (pokemon) { 
+  pokemonRepository.addListItem(pokemon);
 });
  
-
-
-
 
 
 
