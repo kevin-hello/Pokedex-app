@@ -1,5 +1,5 @@
 let pokemonRepository = (function () {
-  let modalContainer = document.querySelector("#modal-container");
+  let modalContainer = document.querySelector(".container");
   let pokemonList = [];
   let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
 
@@ -14,12 +14,58 @@ let pokemonRepository = (function () {
     return pokemonList;
   }
 
+  function showModal(item) {
+    let modalBody = $(".modal-body");
+    let modalTitle = $(".modal-title");
+    let modalHeader = $(".modal-header");
+
+    modalTitle.empty();
+    modalBody.empty();
+
+    //creating element for name in modal header
+
+    let nameElement = $("<h1>" + item.name + "</h1>");
+
+    //creating image element in modal
+
+    let imageElementFront = $('<img class="modal-img" style="width:50%">');
+
+    imageElementFront.attr("src", item.imageUrlFront);
+
+    let imageElementBack = $('<img class="modal-img" style="width:50%">');
+
+    imageElementBack.attr("src", item.imageUrlBack);
+
+    //creating a height element in modal
+    let heightElement = $("<p>" + "height: " + item.height + "</p>");
+
+    //creating a weight element in modal
+    let weightElement = $("<p>" + "weight: " + item.weight + "</p>");
+
+    // creating a type element in modal
+    let typesElement = $("<p>" + "types: " + item.types + "</p>");
+
+    //creating an abilities element in modal
+    let abilitiesElement = $("<p>" + "abilities: " + item.abilities + "</p>");
+
+    modalTitle.append(nameElement);
+    modalBody.append(imageElementFront);
+    modalBody.append(imageElementBack);
+    modalBody.append(heightElement);
+    modalBody.append(weightElement);
+    modalBody.append(typesElement);
+    modalBody.append(abilitiesElement);
+  }
+
   function addListItem(pokemon) {
     let pokemonList = document.querySelector(".pokemon-list");
     let listItem = document.createElement("li");
+    listItem.classList.add("group-list-item");
     let button = document.createElement("button");
     button.innerText = pokemon.name;
-    button.classList.add("button-class");
+    button.classList.add("button-class", "btn", "btn-primary");
+    button.setAttribute("data-target", "#pokemonModal");
+    button.setAttribute("data-toggle", "modal");
     listItem.appendChild(button);
     pokemonList.appendChild(listItem);
     button.addEventListener("click", function () {
@@ -74,49 +120,6 @@ let pokemonRepository = (function () {
 
   function hideModal() {
     modalContainer.classList.remove("is-visible");
-  }
-
-  function showModal(item) {
-    let modalBody = $(".modal-body");
-    let modalTitle = $(".modal-title");
-    let modalHeader = $(".modal-header");
-
-    modalTitle.empty();
-    modalBody.empty();
-
-    //creating element for name in modal header
-
-    let nameElement = $("<h1>" + item.name + "</h1>");
-
-    //creating image element in modal
-
-    let imageElementFront = $('<img class="modal-img" style="width:50%">');
-
-    imageElementFront.attr("src", item.imageUrlFront);
-
-    let imageElementBack = $('<img class="modal-img" style="width:50%">');
-
-    imageElementBack.attr("src", item.imageUrlBack);
-
-    //creating a height element in modal
-    let heightElement = $("<p>" + "height: " + item.height + "</p>");
-
-    //creating a weight element in modal
-    let weightElement = $("<p>" + "weight: " + item.weight + "</p>");
-
-    // creating a type element in modal
-    let typesElement = $("<p>" + "types: " + item.types + "</p>");
-
-    //creating an abilities element in modal
-    let abilitiesElement = $("<p>" + "abilities: " + item.abilities + "</p>");
-
-    modalTitle.append(nameElement);
-    modalBody.append(imageElementFront);
-    modalBody.append(imageElementBack);
-    modalBody.append(heightElement);
-    modalBody.append(weightElement);
-    modalBody.append(typesElement);
-    modalBody.append(abilitiesElement);
   }
 
   return {
