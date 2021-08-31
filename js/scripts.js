@@ -56,11 +56,11 @@ let pokemonRepository = (function () {
       .then(function (details) {
         // Now we add the details to the item
         item.imageUrlFront = details.sprites.front_default;
-        item.iamgeUrlBack = details.sprites.back_default;
+        item.imageUrlBack = details.sprites.back_default;
         item.height = details.height;
         item.types = details.types[0].type.name;
         item.weight = details.weight;
-        item.abilities = details.abilities;
+        item.abilities = details.abilities[0].ability.name;
       })
       .catch(function (e) {
         console.error(e);
