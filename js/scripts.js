@@ -55,9 +55,12 @@ let pokemonRepository = (function () {
       })
       .then(function (details) {
         // Now we add the details to the item
-        item.imageUrl = details.sprites.front_default;
+        item.imageUrlFront = details.sprites.front_default;
+        item.iamgeUrlBack = details.sprites.back_default;
         item.height = details.height;
-        item.types = details.types;
+        item.types = details.types[0].type.name;
+        item.weight = details.weight;
+        item.abilities = details.abilities;
       })
       .catch(function (e) {
         console.error(e);
@@ -73,53 +76,48 @@ let pokemonRepository = (function () {
     modalContainer.classList.remove("is-visible");
   }
 
-  function showModal(pokemon) {
-    // clearing existing modal content
-    modalContainer.innerHTML = "";
+  function showModal(item) {
+    let modalBody = $(".modal-body");
+    let modalTitle = $(".modal-title");
+    let modalHeader = $(".modal-header");
 
-    let modal = document.createElement("div");
-    modal.classList.add("modal");
+    modalTitle.empty();
+    modalBody.empty();
 
-    //adding new modal content
-    let closeButtonElement = document.createElement("button");
-    closeButtonElement.classList.add("modal-close");
-    closeButtonElement.innerText = "Close";
+    //creating element for name in modal header
 
-    let titleElement = document.createElement("h1");
-    titleElement.innerText = pokemon.name;
+    let nameElement = $("<h1>" + item.name + "</h1>");
 
-    let imageElement = document.createElement("img");
-    imageElement.src = pokemon.imageUrl;
+    //creating image element in modal
 
-    let contentElement = document.createElement("p");
-    contentElement.innerText = "height: (" + pokemon.height + ")";
+    let imageElementFront = $('<img class="modal-img" style="width:50%">');
 
-    modal.appendChild(closeButtonElement);
-    modal.appendChild(titleElement);
-    modal.appendChild(imageElement);
-    modal.appendChild(contentElement);
-    modalContainer.appendChild(modal);
+    imageElementFront.attr("src", item.imageUrlFront);
 
-    modalContainer.classList.add("is-visible");
-    closeButtonElement.addEventListener("click", hideModal);
+    let imageElementBack = $('<img class="modal-img" style="width:50%">');
+
+    imageElementBack.attr("src", item.imageUrlBack);
+
+    //creating a height element in modal
+    let heightElement = $("<p>" + "height: " + item.height + "</p>");
+
+    //creating a weight element in modal
+    let weightElement = $("<p>" + "weight: " + item.weight + "</p>");
+
+    // creating a type element in modal
+    let typesElement = $("<p>" + "types: " + item.types + "</p>");
+
+    //creating an abilities element in modal
+    let abilitiesElement = $("<p>" + "abilities: " + item.abilities + "</p>");
+
+    modalTitle.append(nameElement);
+    modalBody.append(imageElementFront);
+    modalBody.append(imageElementBack);
+    modalBody.append(heightElement);
+    modalBody.append(weightElement);
+    modalBody.append(typesElement);
+    modalBody.append(abilitiesElement);
   }
-
-  // escape key will hide modal
-  window.addEventListener("keydown", (e) => {
-    let modalContainer = document.querySelector("#modal-container");
-    if (e.key === "Escape" && modalContainer.classList.contains("is-visible")) {
-      hideModal();
-    }
-  });
-
-  modalContainer.addEventListener("click", (e) => {
-    // Since this is also triggered when clicking INSIDE the modal
-    // We only want to close if the user clicks directly on the overlay
-    let target = e.target;
-    if (target === modalContainer) {
-      hideModal();
-    }
-  });
 
   return {
     add: add,
