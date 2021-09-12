@@ -52,14 +52,15 @@ button.close-button:hover {
   padding: 10px;
   margin: 10px;
   width: 90%;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  border-radius: 15px;
 }
 
 /* overwriting bootstrap default styling  */
 
 .button-class, .btn-primary:active, .btn-primary:visited  {
-  text-transform: capitalize;
-  font-size: 1.5em;
-  border-radius: 15px;
+  
   background-color: rgba(0, 0, 0, 0.9) !important;
   color: var(--secondary-color);
   border: 3px solid var(--secondary-color);
@@ -87,6 +88,8 @@ button.close-button:hover {
   padding-left: 10px;
 }
 
+/* overwriting default bootstrap navbar styling */
+
 .bg-dark
 {
   
@@ -102,7 +105,29 @@ button.close-button:hover {
   color: var(--active-link);
 }
 
+/* search bar styling  */
 
+#search-bar:active, #search-bar:hover, #search-bar:visited, #search-bar:focus{
+  box-shadow: none;
+  }
+  
+
+#search-bar{
+  text-align: center;
+  width: 50%;
+  color: var(--highlight-color);
+  background-color: var(--primary-color);
+  border: 3px solid var(--secondary-color);
+  margin: 15px 25% 15px 25%;
+}
+
+
+
+
+
+
+
+/* modal content sizing adjustment for smaller screens  */
 @media all and (min-width:350px) and  (max-width: 500px) {
 
 .modal-title h1{

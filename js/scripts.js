@@ -2,6 +2,7 @@ let pokemonRepository = (function () {
   let modalContainer = document.querySelector(".container");
   let pokemonList = [];
   let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
+  let searchInput = document.querySelector("#search-bar");
 
   function add(pokemon) {
     if (typeof pokemon === "object" && "name" in pokemon) {
@@ -135,6 +136,20 @@ let pokemonRepository = (function () {
   function hideModal() {
     modalContainer.classList.remove("is-visible");
   }
+
+  searchInput.addEventListener("input", function () {
+    let listPokemon = document.querySelectorAll("li");
+    //let listPokemon = $('li');
+    let value = searchInput.value.toUpperCase();
+
+    listPokemon.forEach(function (pokemon) {
+      if (pokemon.innerText.toUpperCase().indexOf(value) > -1) {
+        pokemon.style.display = "";
+      } else {
+        pokemon.style.display = "none";
+      }
+    });
+  });
 
   return {
     add: add,

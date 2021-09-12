@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex App</title>
+    <link href="images/ultraball-logo.png" rel="shortcut icon" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,14 +23,7 @@
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">
-        <!-- <img
-          src="images/ultraball-logo.png"
-          alt="logo"
-          id="corner-logo"
-        /> -->
-        Pokedex</a
-      >
+      <a class="navbar-brand" href="index.html"> Pokedex</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -57,8 +51,16 @@
         </ul>
       </div>
     </nav>
-    <!-- <h1 id="pokedex-title">Pokedex App</h1> -->
     <!-- Modal -->
+    <form class="form-inline">
+      <input
+        class="form-control"
+        id="search-bar"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+    </form>
     <div
       class="modal fade"
       id="pokemonModal"
