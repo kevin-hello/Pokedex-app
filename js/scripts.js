@@ -43,10 +43,12 @@ let pokemonRepository = (function () {
     let weightElement = $("<p>" + "weight: " + item.weight + "</p>");
 
     // creating a type element in modal
-    let typesElement = $("<p>" + "types: " + item.types + "</p>");
+    let typesElement = $("<p>" + "types: " + item.types.join(", ") + "</p>");
 
     //creating an abilities element in modal
-    let abilitiesElement = $("<p>" + "abilities: " + item.abilities + "</p>");
+    let abilitiesElement = $(
+      "<p>" + "abilities: " + item.abilities.join(", ") + "</p>"
+    );
 
     modalTitle.append(nameElement);
     modalBody.append(imageElementFront);
@@ -63,7 +65,13 @@ let pokemonRepository = (function () {
     listItem.classList.add("group-list-item");
     let button = document.createElement("button");
     button.innerText = pokemon.name;
-    button.classList.add("button-class", "btn", "btn-primary");
+    button.classList.add(
+      "button-class",
+      "btn",
+      "btn-primary",
+      "col",
+      "col-md-4"
+    );
     button.setAttribute("data-target", "#pokemonModal");
     button.setAttribute("data-toggle", "modal");
     listItem.appendChild(button);
@@ -104,9 +112,15 @@ let pokemonRepository = (function () {
         item.imageUrlFront = details.sprites.front_default;
         item.imageUrlBack = details.sprites.back_default;
         item.height = details.height;
-        item.types = details.types[0].type.name;
+        item.types = [];
+        for (let i = 0; i < details.types.length; i++) {
+          item.types.push(details.types[i].type.name);
+        }
         item.weight = details.weight;
-        item.abilities = details.abilities[0].ability.name;
+        item.abilities = [];
+        for (let i = 0; i < details.abilities.length; i++) {
+          item.abilities.push(details.abilities[i].ability.name);
+        }
       })
       .catch(function (e) {
         console.error(e);
