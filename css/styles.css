@@ -1,45 +1,50 @@
-*{
-  font-family: 'Heebo', sans-serif;
+:root {
+  --primary-color: black;
+  --secondary-color: orange;
+  --modal-color: grey;
+  --font-color: orange;
+  --highlight-color: white;
+  --active-link: white; 
+}
+
+* {
+  font-family: "Heebo", sans-serif;
   text-align: center;
-  
 }
 
-body{
-background-image: url(../images/double-bubble-dark.png)
-  
+body {
+  background-image: url(../images/background-pattern.png);
 }
-.pokemon-list{
+.pokemon-list {
   list-style-type: none;
-  
 }
 
-
-ul{
+ul {
   padding-inline-start: 0;
 }
 
-.modal-title{
+.modal-title {
   text-transform: capitalize;
-  color: orange;
+  color: var(--font-color);
 }
-button.close-button{
-  background-color: black;
-  color: orange;
-  border-color: black;
+button.close-button {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  border-color: var(--primary-color);
 }
 
-button.close-button:hover{
-  color:white;
-background-color: grey;
-border-color:white;
+button.close-button:hover {
+  color: var(--highlight-color);
+  background-color: var(--modal-color);
+  border-color: var(--highlight-color);
 }
-.modal-content{
-background-color: grey;
-font-size: 1.2em;
-
+.modal-content {
+  background-color: var(--modal-color);
+  font-size: 1em;
 }
-.modal-header, .modal-footer{
-  border-color: grey;
+.modal-header,
+.modal-footer {
+  border-color: var(--modal-color);
   text-align: center;
 }
 
@@ -47,22 +52,81 @@ font-size: 1.2em;
   padding: 10px;
   margin: 10px;
   width: 90%;
+}
+
+/* overwriting bootstrap default styling  */
+
+.button-class, .btn-primary:active, .btn-primary:visited  {
   text-transform: capitalize;
   font-size: 1.5em;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.9);
-  color:orange;
-  border-color:orange;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  color: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
+  box-shadow: none !important;}
+
+.button-class:hover, .btn-primary:hover, .btn-primary:focus, .btn-primary:visited {
+  color: var(--highlight-color);
+  background-color: var(--modal-color) !important;
+  border: 3px solid var(--highlight-color) !important;
+  box-shadow: none !important;
+}
+.button-class:focus{
+  background-color: var(--modal-color);
+  border: 3px solid var(--highlight-color);
+}
+.close:hover, .close:visited, .close:focus{
+  box-shadow: none !important;
 }
 
-.button-class:hover{
-color:white;
-background-color: grey;
-border-color:white;
-
+.navbar{
+  padding: 0;
 }
-#pokedex-title {
-  margin: 5px 0 5px 0;
-  color: orange;
 
+.navbar-brand{
+  padding-left: 10px;
 }
+
+.bg-dark
+{
+  
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--font-color)
+}
+.navbar-dark .navbar-brand {
+  color: var(--font-color)
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+  color: var(--active-link);
+}
+
+
+@media all and (min-width:350px) and  (max-width: 500px) {
+
+.modal-title h1{
+  font-size: 1.4em;
+}
+body{
+  font-size: 1em;
+}
+}
+
+@media all and (max-width: 350px) {
+
+  .modal-title h1{
+    font-size: 1.2em;
+  }
+  body{
+    font-size: .85em;
+  }
+  }
+
+  @media all and (min-width: 200px) and (max-width: 300px) {
+
+    .modal-title h1{
+      float: left;
+      font-size: .9em;
+    }
+    }
