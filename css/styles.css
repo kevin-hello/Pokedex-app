@@ -1,16 +1,68 @@
 *{
+  font-family: 'Heebo', sans-serif;
   text-align: center;
+  
+}
+
+body{
+background-image: url(../images/double-bubble-dark.png)
+  
 }
 .pokemon-list{
   list-style-type: none;
+  
 }
+
 
 ul{
   padding-inline-start: 0;
 }
 
-.button-class{
-  padding: 10px;
-  margin: 5px;
+.modal-title{
+  text-transform: capitalize;
+  color: orange;
+}
+button.close-button{
+  background-color: black;
+  color: orange;
+  border-color: black;
 }
 
+button.close-button:hover{
+  color:white;
+background-color: grey;
+border-color:white;
+}
+.modal-content{
+background-color: grey;
+font-size: 1.2em;
+
+}
+.modal-header, .modal-footer{
+  border-color: grey;
+  text-align: center;
+}
+
+.button-class{
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color:orange;
+  border-color:orange;
+}
+
+.button-class:hover{
+color:white;
+background-color: grey;
+border-color:white;
+
+}
+#pokedex-title {
+  margin: 5px 0 5px 0;
+  color: orange;
+
+}

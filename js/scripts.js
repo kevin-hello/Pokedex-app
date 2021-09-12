@@ -62,16 +62,16 @@ let pokemonRepository = (function () {
   function addListItem(pokemon) {
     let pokemonList = document.querySelector(".pokemon-list");
     let listItem = document.createElement("li");
-    listItem.classList.add("group-list-item");
+    listItem.classList.add(
+      "group-list-item",
+      "col-12",
+      "col-lg-4",
+      "col-md-6",
+      "col-sm-12"
+    );
     let button = document.createElement("button");
     button.innerText = pokemon.name;
-    button.classList.add(
-      "button-class",
-      "btn",
-      "btn-primary",
-      "col",
-      "col-md-4"
-    );
+    button.classList.add("button-class", "btn", "btn-primary");
     button.setAttribute("data-target", "#pokemonModal");
     button.setAttribute("data-toggle", "modal");
     listItem.appendChild(button);
