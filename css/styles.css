@@ -64,7 +64,7 @@ button.close-button:hover {
 }
 
 .button-class {
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
   color: var(--secondary-color);
   border: 3px solid var(--secondary-color);
   box-shadow: none !important;}
@@ -90,7 +90,7 @@ button.close-button:hover {
 .bg-dark
 {
   
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: var(--font-color)
