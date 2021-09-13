@@ -59,26 +59,23 @@ button.close-button:hover {
 
 /* overwriting bootstrap default styling  */
 
-.button-class, .btn-primary:active, .btn-primary:visited  {
-  
+.btn-primary:active, .btn-primary:visited, .btn-primary:focus, .btn-primary:visited, .close:hover, .close:visited, .close:focus, .button-class:focus  {
+  box-shadow: none !important;
+}
+
+.button-class {
   background-color: rgba(0, 0, 0, 0.9) !important;
   color: var(--secondary-color);
   border: 3px solid var(--secondary-color);
   box-shadow: none !important;}
 
-.button-class:hover, .btn-primary:hover, .btn-primary:focus, .btn-primary:visited {
+.button-class:hover, .btn-primary:hover{
   color: var(--highlight-color);
   background-color: var(--modal-color) !important;
   border: 3px solid var(--highlight-color) !important;
   box-shadow: none !important;
 }
-.button-class:focus{
-  background-color: var(--modal-color);
-  border: 3px solid var(--highlight-color);
-}
-.close:hover, .close:visited, .close:focus{
-  box-shadow: none !important;
-}
+
 
 .navbar{
   padding: 0;
@@ -121,6 +118,10 @@ button.close-button:hover {
   margin: 15px 25% 15px 25%;
 }
 
+i {
+color:var(--secondary-color);
+
+}
 
 
 

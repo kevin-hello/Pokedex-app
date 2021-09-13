@@ -137,9 +137,10 @@ let pokemonRepository = (function () {
     modalContainer.classList.remove("is-visible");
   }
 
+  // search bar function
+
   searchInput.addEventListener("input", function () {
-    let listPokemon = document.querySelectorAll("li");
-    //let listPokemon = $('li');
+    let listPokemon = document.querySelectorAll(".group-list-item");
     let value = searchInput.value.toUpperCase();
 
     listPokemon.forEach(function (pokemon) {
