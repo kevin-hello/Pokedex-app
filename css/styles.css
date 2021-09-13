@@ -116,17 +116,8 @@ button.close-button:hover {
   background-color: var(--primary-color);
   border: 3px solid var(--secondary-color);
   margin: 15px 25% 15px 25%;
+  position: relative
 }
-
-i {
-color:var(--secondary-color);
-
-}
-
-
-
-
-
 
 /* modal content sizing adjustment for smaller screens  */
 @media all and (min-width:350px) and  (max-width: 500px) {
