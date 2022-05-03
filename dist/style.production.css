@@ -24,7 +24,7 @@ ul {
 
 .modal-title {
   text-transform: capitalize;
-  color: #5C6B60;
+  color: #FFA500;
 }
 button.close-button {
   background-color: #B7D5C0;
@@ -38,16 +38,18 @@ button.close-button:hover {
   border-color: #8AA090;
 }
 .modal-content {
-  background-color: grey;
+  background-color: #8AA090;
   font-size: 1em;
 }
 .modal-header {
-  border-color: grey;
+  border-color: #8AA090;
   text-align: center;
+
 }
 .modal-footer {
-  border-color: grey;
+  border-color: #8AA090;
   text-align: center;
+
 }
 
 .button-class{
@@ -67,24 +69,24 @@ button.close-button:hover {
 }
 
 .button-class {
-  background-color: rgba(0, 0, 0, 0.85) !important;
-  color: orange;
-  border: 3px solid orange;
+  background-color: #B7D5C0 !important;
+  color: #5C6B60;
+  border: 3px solid #5C6B60;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;}
 
 .button-class:hover{
-  color: white;
-  background-color: grey !important;
-  border: 3px solid white !important;
+  color: #8AA090;
+  background-color: #DBDFBC !important;
+  border: 3px solid #8AA090 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 
 .btn-primary:hover{
-  color: white;
-  background-color: grey !important;
-  border: 3px solid white !important;
+  color: #8AA090;
+  background-color: #DBDFBC !important;
+  border: 3px solid #8AA090 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -107,16 +109,16 @@ button.close-button:hover {
   color: #5C6B60
 }
 .navbar-nav .active>.nav-link {
-  color: grey;
+  color: #738678;
 }
 .navbar-nav .nav-link.active {
-  color: grey;
+  color: #738678;
 }
 .navbar-nav .nav-link.show {
-  color: grey;
+  color: #738678;
 }
 .navbar-dark .navbar-nav .show>.nav-link {
-  color: grey;
+  color: #738678;
 }
 
 /* search bar styling  */

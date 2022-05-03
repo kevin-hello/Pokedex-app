@@ -7,7 +7,7 @@
   --background-color:#FEE8B8;
   --border-color: #5C6B60;
 
-  --modal-color: grey;
+  --modal-color: #8AA090;
   --modal-title-color: #FFA500;
 
   --button-color:#B7D5C0;
@@ -19,7 +19,7 @@
 
   --nav-bar-color: #B7D5C0;
   --nav-link: #5C6B60;
-  --nav-bar-active-link: grey;
+  --nav-bar-active-link:#738678 ;
 
   --search-bar-color:#B7D5C0;
   --search-bar-border-color:#5C6B60;
@@ -44,7 +44,7 @@ ul {
 
 .modal-title {
   text-transform: capitalize;
-  color: var(--font-color);
+  color: var(--modal-title-color);
 }
 button.close-button {
   background-color: var(--button-color);
@@ -65,6 +65,7 @@ button.close-button:hover {
 .modal-footer {
   border-color: var(--modal-color);
   text-align: center;
+
 }
 
 .button-class{
@@ -83,15 +84,15 @@ button.close-button:hover {
 }
 
 .button-class {
-  background-color: rgba(0, 0, 0, 0.85) !important;
-  color: var(--secondary-color);
-  border: 3px solid var(--secondary-color);
+  background-color: var(--button-color) !important;
+  color: var(--font-color);
+  border: 3px solid var(--border-color);
   box-shadow: none !important;}
 
 .button-class:hover, .btn-primary:hover{
-  color: var(--highlight-color);
-  background-color: var(--modal-color) !important;
-  border: 3px solid var(--highlight-color) !important;
+  color: var(--button-hover-font-color);
+  background-color: var(--button-hover-color) !important;
+  border: 3px solid var(--button-hover-border-color) !important;
   box-shadow: none !important;
 }
 
