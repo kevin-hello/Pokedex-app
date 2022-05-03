@@ -1,10 +1,29 @@
 :root {
   --primary-color: black;
   --secondary-color: orange;
-  --modal-color: grey;
-  --font-color: orange;
+  --font-color: #5C6B60;
   --highlight-color: white;
-  --active-link: white; 
+
+  --background-color:#FEE8B8;
+  --border-color: #5C6B60;
+
+  --modal-color: grey;
+  --modal-title-color: #FFA500;
+
+  --button-color:#B7D5C0;
+  --button-border-color:#5C6B60; 
+  --button-font-color:#5C6B60; 
+  --button-hover-color: #DBDFBC;
+  --button-hover-border-color:#8AA090;
+  --button-hover-font-color:#8AA090;
+
+  --nav-bar-color: #B7D5C0;
+  --nav-link: #5C6B60;
+  --nav-bar-active-link: grey;
+
+  --search-bar-color:#B7D5C0;
+  --search-bar-border-color:#5C6B60;
+  --search-bar-font-color:#5C6B60;
 }
 
 * {
@@ -13,7 +32,7 @@
 }
 
 body {
-  background-image: url(../images/background-pattern.png);
+  background-color: var(--background-color);
 }
 .pokemon-list {
   list-style-type: none;
@@ -28,15 +47,15 @@ ul {
   color: var(--font-color);
 }
 button.close-button {
-  background-color: var(--primary-color);
-  color: var(--font-color);
-  border-color: var(--primary-color);
+  background-color: var(--button-color);
+  color: var(--button-font-color);
+  border-color: var(--button-border-color);
 }
 
 button.close-button:hover {
-  color: var(--highlight-color);
-  background-color: var(--modal-color);
-  border-color: var(--highlight-color);
+  color: var(--button-hover-font-color);
+  background-color: var(--button-hover-color);
+  border-color: var(--button-hover-border-color);
 }
 .modal-content {
   background-color: var(--modal-color);
@@ -87,19 +106,14 @@ button.close-button:hover {
 
 /* overwriting default bootstrap navbar styling */
 
-.bg-dark
-{
-  
-  background-color: rgba(0, 0, 0, 0.85) !important;
-}
-.navbar-dark .navbar-nav .nav-link {
+.navbar-nav .nav-link {
   color: var(--font-color)
 }
-.navbar-dark .navbar-brand {
+.navbar-brand {
   color: var(--font-color)
 }
-.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-  color: var(--active-link);
+.navbar-nav .active>.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+  color: var(--nav-bar-active-link);
 }
 
 /* search bar styling  */
@@ -112,9 +126,9 @@ button.close-button:hover {
 #search-bar{
   text-align: center;
   width: 50%;
-  color: var(--highlight-color);
-  background-color: var(--primary-color);
-  border: 3px solid var(--secondary-color);
+  color: var(--search-bar-font-color);
+  background-color: var(--search-bar-color);
+  border: 3px solid var(--search-bar-border-color);
   margin: 15px 25% 15px 25%;
   position: relative
 }
