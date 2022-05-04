@@ -33,8 +33,8 @@ button.close-button {
 }
 
 button.close-button:hover {
-  color: #8AA090;
-  background-color: #DBDFBC;
+  color: #EDF2E5;
+  background-color: #777973;
   border: 0px solid #8AA090;
 }
 .modal-content {
@@ -76,16 +76,16 @@ button.close-button:hover {
           box-shadow: none !important;}
 
 .button-class:hover{
-  color: #8AA090;
-  background-color: #DBDFBC !important;
+  color: #EDF2E5;
+  background-color: #777973 !important;
   border: 0px solid #8AA090 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 
 .btn-primary:hover{
-  color: #8AA090;
-  background-color: #DBDFBC !important;
+  color: #EDF2E5;
+  background-color: #777973 !important;
   border: 0px solid #8AA090 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
