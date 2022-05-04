@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #FEE8B8;
+  background-color: #EDF2E5;
 }
 .pokemon-list {
   list-style-type: none;
@@ -29,13 +29,13 @@ ul {
 button.close-button {
   background-color: #B7D5C0;
   color: #5C6B60;
-  border-color: #5C6B60;
+  border:0px solid #5C6B60;
 }
 
 button.close-button:hover {
   color: #8AA090;
   background-color: #DBDFBC;
-  border-color: #8AA090;
+  border: 0px solid #8AA090;
 }
 .modal-content {
   background-color: #8AA090;
@@ -71,14 +71,14 @@ button.close-button:hover {
 .button-class {
   background-color: #B7D5C0 !important;
   color: #5C6B60;
-  border: 2px solid #5C6B60;
+  border: 0px solid #5C6B60;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;}
 
 .button-class:hover{
   color: #8AA090;
   background-color: #DBDFBC !important;
-  border: 2px solid #8AA090 !important;
+  border: 0px solid #8AA090 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -86,7 +86,7 @@ button.close-button:hover {
 .btn-primary:hover{
   color: #8AA090;
   background-color: #DBDFBC !important;
-  border: 2px solid #8AA090 !important;
+  border: 0px solid #8AA090 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -95,7 +95,6 @@ button.close-button:hover {
 .navbar{
   padding: 0;
   background-color: #B7D5C0;
-  border-bottom: 2px solid #5c6b60;
 }
 
 .navbar-brand{
@@ -128,6 +127,7 @@ button.close-button:hover {
 #search-bar:active, #search-bar:hover, #search-bar:visited, #search-bar:focus{
   -webkit-box-shadow: none;
           box-shadow: none;
+  border: 0px solid white;
   }
   
 
@@ -136,7 +136,7 @@ button.close-button:hover {
   width: 50%;
   color: #5C6B60;
   background-color: #B7D5C0;
-  border: 2px solid #5C6B60;
+  border: 0px solid #5C6B60;
   margin: 15px 25% 15px 25%;
   position: relative
 }
