@@ -71,14 +71,14 @@ button.close-button:hover {
 .button-class {
   background-color: #B7D5C0 !important;
   color: #5C6B60;
-  border: 3px solid #5C6B60;
+  border: 2px solid #5C6B60;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;}
 
 .button-class:hover{
   color: #8AA090;
   background-color: #DBDFBC !important;
-  border: 3px solid #8AA090 !important;
+  border: 2px solid #8AA090 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -86,7 +86,7 @@ button.close-button:hover {
 .btn-primary:hover{
   color: #8AA090;
   background-color: #DBDFBC !important;
-  border: 3px solid #8AA090 !important;
+  border: 2px solid #8AA090 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -94,6 +94,8 @@ button.close-button:hover {
 
 .navbar{
   padding: 0;
+  background-color: #B7D5C0;
+  border-bottom: 2px solid #5c6b60;
 }
 
 .navbar-brand{
@@ -109,16 +111,16 @@ button.close-button:hover {
   color: #5C6B60
 }
 .navbar-nav .active>.nav-link {
-  color: #738678;
+  color: #ffa500;
 }
 .navbar-nav .nav-link.active {
-  color: #738678;
+  color: #ffa500;
 }
 .navbar-nav .nav-link.show {
-  color: #738678;
+  color: #ffa500;
 }
-.navbar-dark .navbar-nav .show>.nav-link {
-  color: #738678;
+.navbar-nav .show>.nav-link {
+  color: #ffa500;
 }
 
 /* search bar styling  */
@@ -134,7 +136,7 @@ button.close-button:hover {
   width: 50%;
   color: #5C6B60;
   background-color: #B7D5C0;
-  border: 3px solid #5C6B60;
+  border: 2px solid #5C6B60;
   margin: 15px 25% 15px 25%;
   position: relative
 }
