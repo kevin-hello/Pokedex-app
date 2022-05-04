@@ -27,14 +27,14 @@ ul {
   color: #FFA500;
 }
 button.close-button {
-  background-color: #B7D5C0;
-  color: #5C6B60;
+  background-color: #65A478;
+  color: #EDF2E5;
   border:0px solid #5C6B60;
 }
 
 button.close-button:hover {
-  color: #EDF2E5;
-  background-color: #777973;
+  color: #65A478;
+  background-color: #B7D5C0;
   border: 0px solid #8AA090;
 }
 .modal-content {
@@ -69,23 +69,23 @@ button.close-button:hover {
 }
 
 .button-class {
-  background-color: #B7D5C0 !important;
-  color: #5C6B60;
+  background-color: #65A478 !important;
+  color: #EDF2E5;
   border: 0px solid #5C6B60;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;}
 
 .button-class:hover{
-  color: #EDF2E5;
-  background-color: #777973 !important;
+  color: #65A478;
+  background-color: #B7D5C0 !important;
   border: 0px solid #8AA090 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 
 .btn-primary:hover{
-  color: #EDF2E5;
-  background-color: #777973 !important;
+  color: #65A478;
+  background-color: #B7D5C0 !important;
   border: 0px solid #8AA090 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -94,7 +94,7 @@ button.close-button:hover {
 
 .navbar{
   padding: 0;
-  background-color: #B7D5C0;
+  background-color: #65A478;
 }
 
 .navbar-brand{
@@ -104,22 +104,22 @@ button.close-button:hover {
 /* overwriting default bootstrap navbar styling */
 
 .navbar-nav .nav-link {
-  color: #5C6B60
+  color: #EDF2E5
 }
 .navbar-brand {
-  color: #5C6B60
+  color: #EDF2E5
 }
 .navbar-nav .active>.nav-link {
-  color: #ffa500;
+  color: #FFA500;
 }
 .navbar-nav .nav-link.active {
-  color: #ffa500;
+  color: #FFA500;
 }
 .navbar-nav .nav-link.show {
-  color: #ffa500;
+  color: #FFA500;
 }
 .navbar-nav .show>.nav-link {
-  color: #ffa500;
+  color: #FFA500;
 }
 
 /* search bar styling  */

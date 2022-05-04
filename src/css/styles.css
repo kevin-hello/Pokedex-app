@@ -2,7 +2,7 @@
   --primary-color: black;
   --secondary-color: orange;
 
-  --font-color: #5C6B60;
+  --font-color: #EDF2E5;
   --highlight-color: white;
 
   --background-color:#EDF2E5;
@@ -11,17 +11,17 @@
   --modal-color: #8AA090;
   --modal-title-color: #FFA500;
 
-  --button-color:#B7D5C0;
+  --button-color:#65A478;
   --button-border-color:#5C6B60; 
-  --button-font-color:#5C6B60; 
-  --button-hover-color: #777973;
+  --button-font-color:#EDF2E5; 
+  --button-hover-color: #B7D5C0;
   --button-hover-border-color:#8AA090;
-  --button-hover-font-color:#EDF2E5;
+  --button-hover-font-color:#65A478;
 
-  --nav-bar-color: #B7D5C0;
+  --nav-bar-color: #65A478;
   --nav-bar-border: #5c6b60;
-  --nav-link: #5C6B60;
-  --nav-bar-active-link:#ffa500 ;
+  --nav-link: #EDF2E5;
+  --nav-bar-active-link:#FFA500;
 
 
   --search-bar-color:#B7D5C0;
