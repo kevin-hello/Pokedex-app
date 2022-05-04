@@ -1,6 +1,7 @@
 :root {
   --primary-color: black;
   --secondary-color: orange;
+
   --font-color: #5C6B60;
   --highlight-color: white;
 
@@ -18,8 +19,10 @@
   --button-hover-font-color:#8AA090;
 
   --nav-bar-color: #B7D5C0;
+  --nav-bar-border: #5c6b60;
   --nav-link: #5C6B60;
-  --nav-bar-active-link:#738678 ;
+  --nav-bar-active-link:#ffa500 ;
+
 
   --search-bar-color:#B7D5C0;
   --search-bar-border-color:#5C6B60;
@@ -86,19 +89,21 @@ button.close-button:hover {
 .button-class {
   background-color: var(--button-color) !important;
   color: var(--font-color);
-  border: 3px solid var(--border-color);
+  border: 2px solid var(--border-color);
   box-shadow: none !important;}
 
 .button-class:hover, .btn-primary:hover{
   color: var(--button-hover-font-color);
   background-color: var(--button-hover-color) !important;
-  border: 3px solid var(--button-hover-border-color) !important;
+  border: 2px solid var(--button-hover-border-color) !important;
   box-shadow: none !important;
 }
 
 
 .navbar{
   padding: 0;
+  background-color: var(--nav-bar-color);
+  border-bottom: 2px solid #5c6b60;
 }
 
 .navbar-brand{
@@ -113,7 +118,7 @@ button.close-button:hover {
 .navbar-brand {
   color: var(--font-color)
 }
-.navbar-nav .active>.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+.navbar-nav .active>.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-nav .show>.nav-link {
   color: var(--nav-bar-active-link);
 }
 
@@ -129,7 +134,7 @@ button.close-button:hover {
   width: 50%;
   color: var(--search-bar-font-color);
   background-color: var(--search-bar-color);
-  border: 3px solid var(--search-bar-border-color);
+  border: 2px solid var(--search-bar-border-color);
   margin: 15px 25% 15px 25%;
   position: relative
 }
