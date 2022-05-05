@@ -9,7 +9,7 @@
   --border-color: #5C6B60;
 
   --modal-color: #65A478;
-  --modal-title-color: #FFA500;
+  --modal-title-color: #113100;
   --modal-button-color:#B7D5C0;
   --modal-button-font-color: #000;
 
@@ -19,12 +19,12 @@
   --button-font-color:#EDF2E5; 
   --button-hover-color: #4f805d;
   --button-hover-border-color:#8AA090;
-  --button-hover-font-color:#FFA500;
+  --button-hover-font-color:#F4e100;
 
   --nav-bar-color: #65A478;
   --nav-bar-border: #5c6b60;
   --nav-link: #EDF2E5;
-  --nav-bar-active-link:#FFA500;
+  --nav-bar-active-link:#113100;
 
 
   --search-bar-color:#B7D5C0;

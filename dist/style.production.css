@@ -24,7 +24,7 @@ ul {
 
 .modal-title {
   text-transform: capitalize;
-  color: #FFA500;
+  color: #113100;
 }
 button.close-button {
   background-color: #B7D5C0;
@@ -33,7 +33,7 @@ button.close-button {
 }
 
 button.close-button:hover {
-  color: #FFA500;
+  color: #F4e100;
   background-color: #4f805d;
   border: 0px solid #8AA090;
 }
@@ -78,7 +78,7 @@ button.close-button:hover {
           box-shadow: none !important;}
 
 .button-class:hover{
-  color: #FFA500;
+  color: #F4e100;
   background-color: #4f805d !important;
   border: 0px solid #8AA090 !important;
   -webkit-box-shadow: none !important;
@@ -86,7 +86,7 @@ button.close-button:hover {
 }
 
 .btn-primary:hover{
-  color: #FFA500;
+  color: #F4e100;
   background-color: #4f805d !important;
   border: 0px solid #8AA090 !important;
   -webkit-box-shadow: none !important;
@@ -112,16 +112,16 @@ button.close-button:hover {
   color: #EDF2E5
 }
 .navbar-nav .active>.nav-link {
-  color: #FFA500;
+  color: #113100;
 }
 .navbar-nav .nav-link.active {
-  color: #FFA500;
+  color: #113100;
 }
 .navbar-nav .nav-link.show {
-  color: #FFA500;
+  color: #113100;
 }
 .navbar-nav .show>.nav-link {
-  color: #FFA500;
+  color: #113100;
 }
 
 /* search bar styling  */
