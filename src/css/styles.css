@@ -143,6 +143,22 @@ button.close-button:hover {
   margin: 15px 25% 15px 25%;
   position: relative
 }
+/* about page styling  */
+#about-content{
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+#about-content h1{
+  font-size: 1.6em;
+}
+#about-content h3{
+  font-size: 1.2em;
+}
+#about-content ul{
+  list-style-type: circle;
+}
 
 /* modal content sizing adjustment for smaller screens  */
 @media all and (min-width:350px) and  (max-width: 500px) {
