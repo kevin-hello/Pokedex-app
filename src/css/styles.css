@@ -9,14 +9,14 @@
   --border-color: #5C6B60;
 
   --modal-color: #8AA090;
-  --modal-title-color: #FFA500;
+  --modal-title-color: c;
 
   --button-color:#65A478;
   --button-border-color:#5C6B60; 
   --button-font-color:#EDF2E5; 
-  --button-hover-color: #B7D5C0;
+  --button-hover-color: #4f805d;
   --button-hover-border-color:#8AA090;
-  --button-hover-font-color:#65A478;
+  --button-hover-font-color:#FFA500;
 
   --nav-bar-color: #65A478;
   --nav-bar-border: #5c6b60;
@@ -24,9 +24,9 @@
   --nav-bar-active-link:#FFA500;
 
 
-  --search-bar-color:#B7D5C0;
+  --search-bar-color:#EDF2E5;
   --search-bar-border-color:#5C6B60;
-  --search-bar-font-color:#5C6B60;
+  --search-bar-font-color:#65A478;
 }
 
 * {
