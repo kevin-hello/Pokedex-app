@@ -152,7 +152,7 @@ button.close-button:hover {
 #about-content h1{
   font-size: 1.6em;
   padding-top: 10px;
-  text-align: left;
+
 }
 #about-content h3{
   font-size: 1.2em;
@@ -164,6 +164,9 @@ button.close-button:hover {
 }
 #about-content ul{
   list-style-type: none;
+  text-align: left;
+}
+#about-content li{
   text-align: left;
 }
 /* contact page styling  */
