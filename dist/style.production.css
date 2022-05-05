@@ -151,14 +151,16 @@ button.close-button:hover {
 
 #about-content h1{
   font-size: 1.6em;
+  padding-top: 10px;
 }
 #about-content h3{
   font-size: 1.2em;
 }
-#about-content ul{
-  list-style-type: circle;
-}
+/* contact page styling  */
 
+#contact-content h1{
+  font-size: 1.6em;
+}
 /* modal content sizing adjustment for smaller screens  */
 @media all and (min-width:350px) and  (max-width: 500px) {
 
