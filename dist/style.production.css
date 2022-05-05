@@ -136,7 +136,7 @@ button.close-button:hover {
 #search-bar{
   text-align: center;
   width: 50%;
-  color: #4f805d;
+  color: #113100;
   background-color: #B7D5C0;
   border: 0px solid #5C6B60;
   margin: 15px 25% 15px 25%;
@@ -152,9 +152,19 @@ button.close-button:hover {
 #about-content h1{
   font-size: 1.6em;
   padding-top: 10px;
+  text-align: left;
 }
 #about-content h3{
   font-size: 1.2em;
+  text-align: left;
+}
+#about-content p {
+  text-align: left;
+
+}
+#about-content ul{
+  list-style-type: none;
+  text-align: left;
 }
 /* contact page styling  */
 #contact-content{

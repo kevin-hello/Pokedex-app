@@ -29,7 +29,7 @@
 
   --search-bar-color:#B7D5C0;
   --search-bar-border-color:#5C6B60;
-  --search-bar-font-color:#4f805d;
+  --search-bar-font-color:#113100;;
 }
 
 * {
@@ -153,13 +153,19 @@ button.close-button:hover {
 #about-content h1{
   font-size: 1.6em;
   padding-top: 10px;
+  text-align: left;
 }
 #about-content h3{
   font-size: 1.2em;
+  text-align: left;
 }
+#about-content p {
+  text-align: left;
 
+}
 #about-content ul{
   list-style-type: none;
+  text-align: left;
 }
 /* contact page styling  */
 #contact-content{
