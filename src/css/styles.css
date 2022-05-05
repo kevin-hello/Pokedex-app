@@ -157,6 +157,10 @@ button.close-button:hover {
 #about-content h3{
   font-size: 1.2em;
 }
+
+#about-content ul{
+  list-style-type: none;
+}
 /* contact page styling  */
 #contact-content{
   width: 50%;
