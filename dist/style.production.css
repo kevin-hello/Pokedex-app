@@ -157,6 +157,11 @@ button.close-button:hover {
   font-size: 1.2em;
 }
 /* contact page styling  */
+#contact-content{
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px 0;
+}
 
 #contact-content h1{
   font-size: 1.6em;
