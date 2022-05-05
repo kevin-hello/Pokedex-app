@@ -24,11 +24,11 @@ ul {
 
 .modal-title {
   text-transform: capitalize;
-  color: c;
+  color: #FFA500;
 }
 button.close-button {
-  background-color: #65A478;
-  color: #EDF2E5;
+  background-color: #B7D5C0;
+  color: #000;
   border:0px solid #5C6B60;
 }
 
@@ -38,18 +38,20 @@ button.close-button:hover {
   border: 0px solid #8AA090;
 }
 .modal-content {
-  background-color: #8AA090;
+  background-color: #65A478;
   font-size: 1em;
+  border: 0px solid #65A478;
+
 }
 .modal-header {
-  border-color: #8AA090;
+  border-color: #65A478;
   text-align: center;
-
+  border: 0px solid #65A478;
 }
 .modal-footer {
-  border-color: #8AA090;
+  border-color: #65A478;
   text-align: center;
-
+  border: 0px solid #65A478;
 }
 
 .button-class{

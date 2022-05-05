@@ -8,8 +8,11 @@
   --background-color:#EDF2E5;
   --border-color: #5C6B60;
 
-  --modal-color: #8AA090;
-  --modal-title-color: c;
+  --modal-color: #65A478;
+  --modal-title-color: #FFA500;
+  --modal-button-color:#B7D5C0;
+  --modal-button-font-color: #000;
+
 
   --button-color:#65A478;
   --button-border-color:#5C6B60; 
@@ -50,8 +53,8 @@ ul {
   color: var(--modal-title-color);
 }
 button.close-button {
-  background-color: var(--button-color);
-  color: var(--button-font-color);
+  background-color: var(--modal-button-color);
+  color: var(--modal-button-font-color);
   border:0px solid var(--button-border-color);
 }
 
@@ -63,12 +66,14 @@ button.close-button:hover {
 .modal-content {
   background-color: var(--modal-color);
   font-size: 1em;
+  border: 0px solid var(--modal-color);
+
 }
 .modal-header,
 .modal-footer {
   border-color: var(--modal-color);
   text-align: center;
-
+  border: 0px solid var(--modal-color);
 }
 
 .button-class{
