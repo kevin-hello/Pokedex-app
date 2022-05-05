@@ -11,7 +11,7 @@
   --modal-color: #65A478;
   --modal-title-color: #113100;
   --modal-button-color:#B7D5C0;
-  --modal-button-font-color: #000;
+  --modal-button-font-color: #113100;
 
 
   --button-color:#65A478;
@@ -29,7 +29,7 @@
 
   --search-bar-color:#B7D5C0;
   --search-bar-border-color:#5C6B60;
-  --search-bar-font-color:##4f805d;
+  --search-bar-font-color:#4f805d;
 }
 
 * {
@@ -119,8 +119,8 @@ button.close-button:hover {
 .navbar-nav .nav-link {
   color: var(--font-color)
 }
-.navbar-brand {
-  color: var(--font-color)
+.navbar-nav .nav-link:hover {
+  color: var(--button-hover-font-color)
 }
 .navbar-nav .active>.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-nav .show>.nav-link {
   color: var(--nav-bar-active-link);

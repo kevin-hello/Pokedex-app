@@ -28,7 +28,7 @@ ul {
 }
 button.close-button {
   background-color: #B7D5C0;
-  color: #000;
+  color: #113100;
   border:0px solid #5C6B60;
 }
 
@@ -108,8 +108,8 @@ button.close-button:hover {
 .navbar-nav .nav-link {
   color: #EDF2E5
 }
-.navbar-brand {
-  color: #EDF2E5
+.navbar-nav .nav-link:hover {
+  color: #F4e100
 }
 .navbar-nav .active>.nav-link {
   color: #113100;
@@ -136,7 +136,7 @@ button.close-button:hover {
 #search-bar{
   text-align: center;
   width: 50%;
-  color: ##4f805d;
+  color: #4f805d;
   background-color: #B7D5C0;
   border: 0px solid #5C6B60;
   margin: 15px 25% 15px 25%;
