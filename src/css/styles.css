@@ -182,10 +182,12 @@ button.close-button:hover {
   width: 50%;
   margin: 0 auto;
   padding: 5px 0;
+  color: var(--about-page-font-color);
 }
 
 #contact-content h1{
   font-size: 1.6em;
+  color: var(--about-page-subheader-color);
 }
 /* modal content sizing adjustment for smaller screens  */
 @media all and (min-width:350px) and  (max-width: 500px) {
