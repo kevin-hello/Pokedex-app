@@ -29,7 +29,11 @@
 
   --search-bar-color:#B7D5C0;
   --search-bar-border-color:#5C6B60;
-  --search-bar-font-color:#113100;;
+  --search-bar-font-color:#113100;
+
+  --about-page-font-color: #776c48;
+  --about-page-subheader-color: #155724;
+
 }
 
 * {
@@ -148,11 +152,13 @@ button.close-button:hover {
   width: 50%;
   margin: 0 auto;
   padding: 5px 0;
+  color: var(--about-page-font-color);
 }
 
 #about-content h1{
   font-size: 1.6em;
   padding-top: 10px;
+  color: var(--primary-color);
 
 }
 #about-content h3{
