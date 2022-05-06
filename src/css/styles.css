@@ -31,8 +31,11 @@
   --search-bar-border-color:#5C6B60;
   --search-bar-font-color:#113100;
 
-  --about-page-font-color: #434E3B;
+  --about-page-header-color:#113100;
   --about-page-subheader-color: #155724;
+  --about-page-font-color: #434E3B;
+
+
 
 }
 
@@ -158,7 +161,7 @@ button.close-button:hover {
 #about-content h1{
   font-size: 1.6em;
   padding-top: 10px;
-  color: var(--search-bar-font-color);
+  color: var(--about-page-header-color);
 
 }
 #about-content h3{

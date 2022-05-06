@@ -153,13 +153,13 @@ button.close-button:hover {
 #about-content h1{
   font-size: 1.6em;
   padding-top: 10px;
-  color: black;
+  color: #113100;
 
 }
 #about-content h3{
   font-size: 1.2em;
   text-align: left;
-  color: #113100;
+  color: #155724;
 }
 #about-content p {
   text-align: left;
